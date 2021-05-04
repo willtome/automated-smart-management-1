@@ -5,8 +5,8 @@ regions:
 filters:
   tag:ContentView: CentOS7
   tag:Environment: Dev
-  tag:Student: STUDENT_NAME_WITH_NUM
-  tag:guid: EC2_NAME_PREFIX
+  tag:Student: student1
+  tag:guid: wtome
 hostnames:
   - tag:NodeName
 compose:
