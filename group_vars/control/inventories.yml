@@ -11,8 +11,8 @@ tower_inventories:
         tags:
           ContentView: CentOS7
           Environment: Dev
-          guid: EC2_NAME_PREFIX
-          Student: STUDENT_NAME_WITH_NUM
+          guid: wtome
+          Student: student1
 
   - name: CentOS7 Production
     organization: Default
@@ -22,8 +22,8 @@ tower_inventories:
         tags:
           ContentView: CentOS7
           Environment: Prod
-          guid: EC2_NAME_PREFIX
-          Student: STUDENT_NAME_WITH_NUM
+          guid: wtome
+          Student: student1
 
   - name: RHEL7 Development
     organization: Default
@@ -32,8 +32,8 @@ tower_inventories:
         tags:
           ContentView: RHEL7
           Environment: Dev
-          guid: EC2_NAME_PREFIX
-          Student: STUDENT_NAME_WITH_NUM
+          guid: wtome
+          Student: student1
 
   - name: RHEL7 Production
     organization: Default
@@ -42,8 +42,8 @@ tower_inventories:
         tags:
           ContentView: RHEL7
           Environment: Prod
-          guid: EC2_NAME_PREFIX
-          Student: STUDENT_NAME_WITH_NUM
+          guid: wtome
+          Student: student1
 
   - name: ALL Development
     organization: Default
@@ -73,8 +73,8 @@ tower_inventory_sources:
       filters:
         tag:ContentView: CentOS7
         tag:Environment: Dev
-        tag:Student: STUDENT_NAME_WITH_NUM
-        tag:guid: EC2_NAME_PREFIX
+        tag:Student: student1
+        tag:guid: wtome
       hostnames:
         - tag:NodeName
       keyed_groups:
@@ -103,8 +103,8 @@ tower_inventory_sources:
       filters:
         tag:ContentView: CentOS7
         tag:Environment: Prod
-        tag:Student: STUDENT_NAME_WITH_NUM
-        tag:guid: EC2_NAME_PREFIX
+        tag:Student: student1
+        tag:guid: wtome
       hostnames:
         - tag:NodeName
         - tag:Name
@@ -135,8 +135,8 @@ tower_inventory_sources:
       filters:
         tag:ContentView: RHEL7
         tag:Environment: Dev
-        tag:Student: STUDENT_NAME_WITH_NUM
-        tag:guid: EC2_NAME_PREFIX
+        tag:Student: student1
+        tag:guid: wtome
       hostnames:
         - tag:NodeName
       keyed_groups:
@@ -164,8 +164,8 @@ tower_inventory_sources:
       filters:
         tag:ContentView: RHEL7
         tag:Environment: Prod
-        tag:Student: STUDENT_NAME_WITH_NUM
-        tag:guid: EC2_NAME_PREFIX
+        tag:Student: student1
+        tag:guid: wtome
       hostnames:
         - tag:NodeName
         - tag:Name
