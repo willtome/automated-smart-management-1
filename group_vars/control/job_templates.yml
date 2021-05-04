@@ -379,7 +379,7 @@ tower_templates:
       instances:
         tags:
           guid: EC2_NAME_PREFIX
-          Student: STUDENT_NAME_WITH_NUM
+          Student: student1
           short_name: node*
 
   - name: EC2 / Update Route53
@@ -394,8 +394,8 @@ tower_templates:
       instances:
         tags:
           Workshop: EC2_NAME_PREFIX
-      student: STUDENT_NAME_WITH_NUM
-      workshop_dns_zone: WRKSHP_DNS_ZONE
+      student: student1
+      workshop_dns_zone: rhtelco.io
 
   - name: TOWER / Update CentOS7 Dev inventories
     project: Automated Management
