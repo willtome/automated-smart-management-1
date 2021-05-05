@@ -12,7 +12,7 @@ tower_inventories:
           ContentView: CentOS7
           Environment: Dev
           guid: wtome
-          Student: student1
+          Student: "{{ lookup('env', 'AWX_HOST' )}}"
 
   - name: CentOS7 Production
     organization: Default
