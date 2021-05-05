@@ -12,7 +12,7 @@ tower_inventories:
           ContentView: CentOS7
           Environment: Dev
           guid: "{{ lookup('env', 'AWX_HOST' ).split('.')[1] }}"
-          DNS: "{{ lookup('env', 'AWX_HOST').split('.')[2] }}"
+          DNS: "{{ lookup('env', 'AWX_HOST').split('.')[2:3] }}"
           Student: "{{ lookup('env', 'AWX_HOST').split('.')[0] | urlsplit('hostname') }}"
 
   - name: CentOS7 Production
