@@ -5,8 +5,8 @@ regions:
 filters:
   tag:ContentView: CentOS7
   tag:Environment: Dev
-  tag:Student: "{{ lookup('env', 'AWX_HOST') }}"
-  tag:guid: wtome
+  tag:Student: "{{ lookup('env', 'AWX_HOST').split('.')[0] | urlsplit('hostname') }}"
+  tag:guid: "{{ lookup('env', 'AWX_HOST' ).split('.')[1] }}"
 hostnames:
   - tag:NodeName
 compose:
