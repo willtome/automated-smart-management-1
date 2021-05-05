@@ -11,8 +11,8 @@ tower_inventories:
         tags:
           ContentView: CentOS7
           Environment: Dev
-          guid: wtome
-          Student: "{{ lookup('env', 'AWX_HOST' )}}"
+          guid: "{{ lookup('env', 'AWX_HOST' ) | urlsplit('hostname') | split('.')[1] }}"
+          Student: "{{ lookup('env', 'AWX_HOST' ) | urlsplit('hostname') | split('.')[0] }}"
 
   - name: CentOS7 Production
     organization: Default
